@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+    <link rel="stylesheet" type="text/css" href="/app/public/css/plugins/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/app/public/css/plugins/mdb.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/app/public/css/lib/custom.css"/>
+
+
+
+</head>
+<body class="p-4">
+	<span id="ver" style="
+    color: #d3d3d3;
+    position: absolute;
+    font-size: 13px;
+    font-weight: normal;
+	">V1.0</span>
+	<div class="language text-white d-flex justify-content-end">
+		<span id="TR">TR</span><span id="EN" class="active">EN</span>
+	</div>
+
+	<form name="settings">
+	<!--Accordion wrapper-->
+<div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+
+	<!-- Accordion card -->
+	<div class="card">
+
+	<!-- Card header -->
+	<div class="card-header" role="tab" id="headingOne1">
+		<input type="checkbox" name="duration/isActive" checked="true" value=true>
+	  <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1"
+		 aria-expanded="false" aria-controls="collapseOne1">
+		<h5 class="mb-0">
+		  <lang ln="durationName">Duration Movie Name</lang> <i class="fas fa-angle-down rotate-icon"></i>
+		</h5>
+	  </a>
+	</div>
+
+	<!-- Card body -->
+	<div id="collapseOne1" class="collapse " role="tabpanel" aria-labelledby="headingOne1"
+	  data-parent="#accordionEx">
+	  <div class="card-body">
+		<div class="form-group row">
+			<label class="col-5 form-label"><lang ln="opacity">Opacity</lang></label>
+			<div class="col-5">
+				<input id="durationOpacitySlider" name="duration/opacity" class="form-control border-0" type="range" min="0.1" max="1" step="0.1" value="0.7"/>
+
+			</div>
+			<div class="col-2 p-0" style="padding-top:6px !important;">
+				<span class="text-light durationOpacityValue" style=""></span>
+			</div>
+
+		</div>
+		<div class="form-group row">
+			<label class="col-5 form-label"><lang ln="durationSecond">Duration (second)</lang></label>
+			<div class="col-5">
+				<input id="slider11" name="duration/second" class="form-control border-0" type="range" min="3" max="15" step="1" value="3"/>
+
+			</div>
+			<div class="col-2 p-0" style="padding-top:6px !important;">
+				<span class="text-light valueSpan" style="margin-top:6px;"></span>
+			</div>
+		</div>
+		<div class="form-group row">
+			<label class="col-5 form-label"><lang ln="fontSize">Font Size</lang></label>
+			<div class="col-7">
+				<select name="duration/fontSize" class="browser-default custom-select">
+					<option value="sm" class="lang" ln="small">Small</option>
+					<option value="nm" class="lang" ln="normal" selected="selected">Normal</option>
+					<option value="md" class="lang" ln="medium">Medium</option>
+					<option value="lg" class="lang" ln="large">Large</option>
+				</select>
+
+			</div>
+		</div>
+		<div class="form-group row">
+			<label class="col-5 form-label"><lang ln="movieName">Movie Name</lang></label>
+			<div class="col-6">
+				<input name="duration/showMovieName" class="" type="checkbox" checked="true"/>
+			</div>
+		</div>
+		<div class="form-group row">
+			<label class="col-5 form-label"><lang ln="seasonEpisodeName">Season & Ep. Name</lang></label>
+			<div class="col-6">
+				<input name="duration/showSeasonEpisodeName" class="" type="checkbox" checked="true"/>
+			</div>
+		</div>
+	  </div>
+	</div>
+
+	</div>
+	<!-- Accordion card -->
+
+	<!-- Accordion card -->
+	<div class="card">
+
+	<!-- Card header -->
+	<div class="card-header" role="tab" id="headingTwo2">
+		<input type="checkbox" name="mini/isActive" checked="true">
+	  <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
+		aria-expanded="false" aria-controls="collapseTwo2">
+		<h5 class="mb-0">
+		  <lang ln="miniMovieName">Mini Movie Name</lang> <i class="fas fa-angle-down rotate-icon"></i>
+		</h5>
+	  </a>
+	</div>
+
+	<!-- Card body -->
+	<div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
+	  data-parent="#accordionEx">
+	  <div class="card-body">
+		<div class="form-group row">
+			<label class="col-5 form-label"><lang ln="opacity">Opacity</lang></label>
+			<div class="col-5">
+				<input id="miniOpacitySlider" name="mini/opacity" class="form-control border-0" type="range" min="0.1" max="1" step="0.1" value="0"/>
+
+			</div>
+			<div class="col-2 p-0" style="padding-top:6px !important;">
+				<span class="text-light miniOpacityValue" ></span>
+			</div>
+
+		</div>
+		<div class="form-group row">
+			<label class="col-5 form-label"><lang ln="textPosition">Text Position</lang></label>
+			<div class="col-7">
+				<select name="mini/textPosition" class="browser-default custom-select">
+				<option value="topRight" class="lang" ln="topRight">Top - Right</option>
+				<option value="topLeft" class="lang" ln="topLeft">Top - Left</option>
+				<option value="bottomRight" class="lang" ln="bottomRight">Bottom - Right</option>
+				<option value="bottomLeft" class="lang" ln="bottomLeft">Bottom - Left</option>
+			</select>
+
+			</div>
+		</div>
+
+		<div class="form-group row">
+			<label class="col-5 form-label"><lang ln="fontSize">Font Size</lang></label>
+			<div class="col-7">
+				<select name="mini/fontSize" class="browser-default custom-select">
+				<option value="sm" class="lang" ln="small">Small</option>
+				<option value="nm" class="lang" ln="normal">Normal</option>
+				<option value="md" class="lang" ln="medium">Medium</option>
+				<option value="lg" class="lang" ln="large">Large</option>
+			</select>
+
+			</div>
+		</div>
+
+		<div class="form-group row">
+			<label class="col-5 form-label"><lang ln="movieName">Movie Name</lang></label>
+			<div class="col-6">
+				<input class="" name="mini/showMovieName" type="checkbox" checked="true"/>
+			</div>
+		</div>
+		<div class="form-group row">
+			<label class="col-5 form-label"><lang ln="seasonEpisodeName">Season & Ep. Name</lang></label>
+			<div class="col-6">
+				<input class="" name="mini/showSeasonEpisodeName" type="checkbox" checked="true"/>
+			</div>
+		</div>
+	  </div>
+	</div>
+
+	</div>
+	<!-- Accordion card -->
+
+	<!-- Accordion card -->
+	<div class="card">
+
+	<!-- Card header -->
+	<div class="card-header" role="tab" id="headingThree3">
+		<input type="checkbox" name="volume/isActive" checked="true">
+	  <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3"
+		aria-expanded="false" aria-controls="collapseThree3">
+		<h5 class="mb-0">
+		  <lang ln="fixedVolume">Fixed Volume</lang> <i class="fas fa-angle-down rotate-icon"></i>
+		</h5>
+	  </a>
+	</div>
+
+	<!-- Card body -->
+	<div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3"
+	  data-parent="#accordionEx">
+	  <div class="card-body">
+		<div class="form-group row">
+			<label class="col-5 form-label"><lang ln="volumeLevel">Volume Level</lang></label>
+			<div class="col-5">
+				<input id="volumeSlider" name="volume/level" class="form-control border-0" type="range" min=0.0 max=1 step=0.01 value=0.5/>
+
+			</div>
+			<div class="col-2 p-0" style="padding-top:6px !important;">
+				<span class="text-light volumeValue" style=""></span>
+			</div>
+
+		</div>
+	  </div>
+	</div>
+
+	</div>
+	<!-- Accordion card -->
+
+	<!-- Accordion card -->
+	<div class="card">
+
+	<!-- Card header -->
+	<div class="card-header" role="tab" id="headingThree4">
+		<input type="checkbox" name="skip/isActive" checked="true">
+	  <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree4"
+		aria-expanded="false" aria-controls="collapseThree4">
+		<h5 class="mb-0">
+		  <lang ln="skips">Skips</lang> <i class="fas fa-angle-down rotate-icon"></i>
+		</h5>
+	  </a>
+	</div>
+
+	<!-- Card body -->
+	<div id="collapseThree4" class="collapse" role="tabpanel" aria-labelledby="headingThree4"
+	  data-parent="#accordionEx">
+	  <div class="card-body">
+
+		<div class="form-group row">
+		  <label class="col-8 form-label"><lang ln="skipRecap">Skip Recap (reviews)</lang></label>
+		  <div class="col-4">
+			<input name="skip/recap" class="" type="checkbox" checked="true"/>
+		  </div>
+		</div>
+
+		<div class="form-group row">
+		  <label class="col-8 form-label"><lang ln="skipCredit">Skip Intro (credits)</lang></label>
+		  <div class="col-4">
+			<input name="skip/credit" class="" type="checkbox" checked="true"/>
+		  </div>
+		</div>
+
+		
+	  </div>
+	</div>
+
+	</div>
+	<!-- Accordion card -->
+
+
+<a href="https://www.patreon.com/karcan" target="blank">
+  <p class="text-white font-weight mt-4" style="    font-family: 'netflix-rg';
+    font-size: 14px;">
+    <lang ln="ifYouLike">If you like it, why not donate ? :)</lang>
+    <br>
+	<lang ln="visiOnPatreon">Be sure to visit patreon for current and in progress developments.</lang>
+
+  </p>
+</a>
+
+</div>
+<!-- Accordion wrapper -->
+	</form>
+
+	<div class="social-icons fixed-bottom mb-5 pb-2">
+		<a href="https://www.instagram.com/karcan.js/" target="_blank" class="instagram"></a>
+		<a href="https://twitter.com/karcanozbal" target="_blank" class="twitter"></a>
+		<a href="https://www.youtube.com/karcanozbal" target="_blank" class="youtube"></a>
+		<a href="https://www.patreon.com/karcan" target="_blank" class="patreon"></a>
+		<a href="https://www.twitch.tv/karcanozbal" target="_blank" class="twitch"></a>
+	</div>
+
+	<div class="fixed-bottom m-2 mr-3 ml-3">
+		<a type="button" id="save" class="btn btn-md btn-light float-left text-dark" ><i class="fas fa-archive"></i> <lang ln="save">Save</lang></a>
+		<a type="button" href="https://www.patreon.com/karcan" target="_blank" class="btn btn-md btn-danger float-right animated pulse infinite" ><i class="fas fa-gift"></i> <lang ln="donate">Give Thanks ( Donate )</lang></a>
+	</div>
+
+	<script type="text/javascript" src="/app/public/js/plugins/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="/app/public/js/plugins/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/app/public/js/plugins/mdb.min.js"></script>
+	<script type="text/javascript" src="/app/public/js/lib/lang.js"></script>
+	<script type="text/javascript" src="/app/public/js/lib/ui.js"></script>
+</body>
+</html>

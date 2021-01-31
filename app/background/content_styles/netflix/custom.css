@@ -1,0 +1,23 @@
+
+:root{
+    --offset: 10px;
+}
+.PlayerControlsNeo__all-controls{z-index: 2 !important;}
+
+.ntb-movie-title{font-family:'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:bold;text-align:center;}
+.ntb-movie-title span{white-space: pre-line;text-shadow: 1px 1px 10px #000000;}
+
+.ntb-movie-title.duration-name{position: absolute;left: 50%;top: 50%;-ms-transform: translateY(-50%) translateX(-50%);transform: translateY(-50%) translateX(-50%);}
+.ntb-movie-title.duration-name.sm{font-size:2.5vw;}
+.ntb-movie-title.duration-name.nm{font-size:3vw;}
+.ntb-movie-title.duration-name.md{font-size:3.5vw;}
+.ntb-movie-title.duration-name.lg{font-size:4vw;}
+
+.ntb-movie-title.mini-name.topLeft{position: absolute;top:var(--offset);left:var(--offset);}
+.ntb-movie-title.mini-name.topRight{position: absolute;top:var(--offset);right:var(--offset);}
+.ntb-movie-title.mini-name.bottomLeft{position: absolute;bottom:var(--offset);left:var(--offset);}
+.ntb-movie-title.mini-name.bottomRight{position: absolute;bottom:var(--offset);right:var(--offset);}
+.ntb-movie-title.mini-name.sm{font-size:1vw;}
+.ntb-movie-title.mini-name.nm{font-size:1.4vw;}
+.ntb-movie-title.mini-name.md{font-size:1.6vw;}
+.ntb-movie-title.mini-name.lg{font-size:1.8vw;}

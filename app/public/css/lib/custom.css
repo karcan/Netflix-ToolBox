@@ -1,0 +1,151 @@
+:root{
+	--social_sprite : url("/app/public/images/icon-sheetx36.png");
+}
+
+@font-face {
+    font-family: netflix-icon;
+    src: url(/app/public/font/nf-icon-v1-93.woff);
+}
+@font-face {
+    font-family: netflix-rg;
+    src: url(/app/public/font/NetflixSans_W_Rg.woff2);
+}
+@font-face {
+    font-family: netflix-md;
+    src: url(/app/public/font/NetflixSans_W_Md.woff2);
+}
+
+body{
+	font-family: netflix-md;
+	width:375px;
+	height:600px;
+	background-color:#222;
+	
+
+	user-select: none;
+}
+
+.language span{
+	font-size:12px;
+	cursor:pointer;
+	border-right:1px solid var(--light);
+	padding:0 5px;
+	margin:0;
+	font-weight:normal;
+	font-family: netflix-rg;
+}
+.language span.active{
+	color:var(--danger);
+}
+.language span:last-child{
+	border:none;
+}
+.brand{
+	text-align:center;
+}
+.brand:before{
+    color:var(--red) !important;
+    font-size:60px;
+    font-family: netflix-icon;
+    content:'\e5d0'
+}
+.accordion {
+	margin-top:60px;
+	height:340px;
+	max-height:340px;
+	overflow:hidden;
+}
+
+.accordion .card{
+    background-color:unset !important;
+}
+.accordion .card .card-body{
+	padding:0.2rem !important;
+	height:200px;
+	max-height:200px;
+	overflow:hidden;
+}
+.accordion .card .card-header h5{
+	font-size:18px;
+	color:#d3d3d3;
+}
+
+.md-accordion .card .card-header {
+	padding: 0.4rem 1.5rem;
+}
+
+.rotate-icon{
+	position: absolute;
+	right:3px;
+	font-size:22px;
+}
+
+input[type=checkbox]{
+    left: 0;
+    height: 18px;
+    opacity:unset !important;
+    pointer-events: unset !important;
+}
+.custom-select {
+	height: calc(1em + 0.75rem + 2px);
+	padding: .175rem 1.75rem .175rem .75rem;
+	font-size:12px;
+	margin-top:5px;
+}
+.form-group {
+	margin-bottom:0 !important;
+}
+
+.form-control {
+	padding:0 !important;
+}
+.form-control:focus {
+	box-shadow:none !important;
+}
+.card-header input[type=checkbox]{
+	margin-top:1px;
+	width:15px;
+	border:none !important;
+}
+.form-group input[type=checkbox]{
+	left: unset !important;
+	margin-top:9px;
+	width:15px;
+}
+.form-label{
+	font-size:12px;
+	margin-top:10px;
+	color:var(--light);
+}
+
+.social-icons{
+	text-align:center;
+}
+.social-icons a{
+	width: 36px;
+	height: 36px;
+	display:inline-block;
+	cursor:pointer;
+	transition: transform .6s ease;
+	margin:0 3px;
+}
+
+.social-icons a:hover{
+	transform:scale(1.2);
+}
+
+.social-icons a.instagram{
+	background: var(--social_sprite) 0 0;
+}
+.social-icons a.twitter{
+	background: var(--social_sprite) 0 -36px;
+}
+.social-icons a.youtube{
+	background: var(--social_sprite) 0 -72px;
+}
+.social-icons a.patreon{
+	background: var(--social_sprite) 0 -108px;
+}
+.social-icons a.twitch{
+	background: var(--social_sprite) 0 -144px;
+}

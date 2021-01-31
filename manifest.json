@@ -1,0 +1,43 @@
+{
+    "update_url": "https://clients2.google.com/service/update2/crx",
+    "manifest_version": 2,
+    "name": "Netflix ToolBox",
+    "description": "Netflix ToolBox Duration & Mini Movie Name, Auto Skip Credit & Recaps, Fixed Volume",
+    "version": "1.0",
+    "short_name": "Netflix ToolBox / Movie Name",
+    "background": {
+        "scripts": [
+            "app/background/background.js"
+        ],
+        "persistent": true
+    },
+    "icons" : {
+        "64" : "app/public/images/icon.png"
+    },
+    "browser_action": {
+        "default_icon": "app/public/images/icon.png",
+        "default_popup": "app/public/index.html"
+    },
+    "permissions": [
+        "tabs",
+        "*://*.netflix.com/*",
+        "storage"
+    ],
+	"web_accessible_resources": [
+        "app/public/js/plugins/jquery-3.5.1.min.js",
+	    "app/background/content_scripts/netflix/*.js",
+	    "app/background/content_styles/netflix/*.css"
+    ],
+    "content_scripts": [
+        {
+            "run_at": "document_end",
+            "matches": [
+                "*://netflix.com/*"
+            ],
+            "css": [
+                "app/background/content_styles/netflix/custom.css"
+            ]
+        }
+    ],
+    "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'"
+  }
