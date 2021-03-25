@@ -5,4 +5,4 @@
 [![license](https://img.shields.io/github/license/karcan/Netflix-ToolBox?color=%2360A917)](https://github.com/karcan/Netflix-ToolBox/blob/main/LICENSE)
 
 ## Netflix ToolBox ( Chrome Extension ) 
-More options on netflix.
+[Go to Chrome Web Store](https://chrome.google.com/webstore/detail/netflix-toolbox/enmnbebcancfghjgphjegdibkkidahnc "Google's Web Store")
